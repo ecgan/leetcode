@@ -1,6 +1,6 @@
 # Two Sum
 
-[Link](https://leetcode.com/problems/two-sum/)
+[Link to LeetCode page](https://leetcode.com/problems/two-sum/)
 
 ## Complexity Analysis
 
