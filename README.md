@@ -17,6 +17,7 @@ npm run test
 
 ## Solutions
 
-| # | Title | Difficulty | Topics |
-|--:| ------|------------|--------|
+| LeetCode # | Title | Difficulty | Topics |
+|-----------:|:------|:-----------|:-------|
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
+| 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
