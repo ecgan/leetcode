@@ -10,13 +10,13 @@ Topics: Hash table, bit manipulation.
 
 This solution uses the [bitwise XOR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#(Bitwise_XOR)) operator to return the unique value in the array.
 
-To illustrate the bitwise XOR operation using the given Example 2 from LeetCode page: 
+To illustrate the bitwise XOR operation using the given Example 2 from LeetCode page:
 
-```
+```text
 Input: [4,1,2,1,2]
 
-Bitwise XOR operation with 0 on the elements: 
-0 ^ 4 ^ 1 ^ 2 ^ 1 ^ 2 
+Bitwise XOR operation with 0 on the elements:
+0 ^ 4 ^ 1 ^ 2 ^ 1 ^ 2
 > 4
 ```
 
