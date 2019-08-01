@@ -1,6 +1,6 @@
-# Two Sum
+# Single Number
 
-[Link to LeetCode page](https://leetcode.com/problems/two-sum/)
+[Link to LeetCode page](https://leetcode.com/problems/single-number/)
 
 Difficulty: Easy
 
