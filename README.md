@@ -1,7 +1,10 @@
 # leetcode
+
 My solutions for [LeetCode problems](https://leetcode.com/problemset/all/).
 
 ## Usage
+
+### Running and testing locally in your machine
 
 First, install dependencies:
 
@@ -15,6 +18,13 @@ To run tests with jest:
 npm run test
 ```
 
+### Submitting / Running in LeetCode
+
+1. Find your problem in the [problems](/problems) folder.
+2. Copy the solution.
+3. Paste the code into LeetCode.
+4. Hit the Run or Submit button.
+
 ## Solutions
 
 | LeetCode # | Title | Difficulty | Topics |
@@ -22,3 +32,7 @@ npm run test
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash Table, two pointers, binary search, sort, set |
+
+## Questions / Issues
+
+If you have any question, feel free to open a GitHub issue and reach out to me.
