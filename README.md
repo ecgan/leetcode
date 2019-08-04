@@ -32,6 +32,7 @@ npm run test
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash Table, two pointers, binary search, sort, set |
+| 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
 
 ## Questions / Issues
 
