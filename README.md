@@ -33,6 +33,8 @@ npm run test
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash Table, two pointers, binary search, sort, set |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
+| 1150 | [Check If a Number Is Majority Element in a Sorted Array](/problems/is-a-a-majority-element) | Easy | Array, binary search |
+| 1153 | [String Transforms Into Another String](/problems/string-transforms-into-another-string) | Hard | Graph |
 
 ## Questions / Issues
 
