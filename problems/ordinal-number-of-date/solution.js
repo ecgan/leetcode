@@ -14,11 +14,9 @@ const accDays = {
 }
 
 const dayOfYear = (date) => {
-  const [strYYYY, strMM, strDD] = date.split('-')
-
-  const yyyy = parseInt(strYYYY)
-  const dd = parseInt(strDD)
-  const mm = parseInt(strMM)
+  const [yyyy, mm, dd] = date
+    .split('-')
+    .map(x => parseInt(x))
 
   const isLeapYear = (
     (yyyy % 100 === 0 && yyyy % 400 === 0) ||
