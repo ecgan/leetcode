@@ -16,56 +16,109 @@ const btreeGameWinningMove = (root, n, x) => {
     return false
   }
 
-  const minimum = Math.ceil(n / 2)
-  const initialAcc = {
-    current: 0,
-    foundX: false
-  }
+  const target = Math.floor(n / 2)
 
   if (root.val === x) {
-    const acc = searchCount(root.left, x, minimum, initialAcc)
+    const count = dfsSearchCount(root.left, target, 0)
 
-    if (acc.current === minimum - 1) {
+    if (count === target) {
       return false
     }
 
     return true
   }
 
-  const acc = searchCount(root, x, minimum, initialAcc)
+  const acc = {
+    count: 0,
+    nodeX: null
+  }
 
-  return (acc.current >= minimum) || (acc.current < minimum - 1)
+  const resultPreX = dfsSearchCountWithX(root, target, x, acc)
+
+  if (resultPreX.count > target) {
+    return true
+  } else if (resultPreX.count === target) {
+    return false
+  }
+
+  const countXLeft = dfsSearchCount(resultPreX.nodeX.left, target, 0)
+
+  if (countXLeft > target) {
+    return true
+  } else if (countXLeft === target) {
+    return false
+  }
+
+  const countXRight = n - resultPreX.count - countXLeft - 1
+  if (countXRight > target) {
+    return true
+  }
+
+  return false
 }
 
-const searchCount = (node, x, minimum, acc) => {
-  if (node === null) {
+/**
+ * Perform DFS Search for X. Returns as soon as the accumulated count exceeds target. Also returns the TreeNode of x if it is found.
+ * @param {*} node
+ * @param {*} target
+ * @param {*} x
+ * @param {*} acc
+ */
+const dfsSearchCountWithX = (node, target, x, acc) => {
+  if (!node) {
     return acc
   }
 
   if (node.val === x) {
-    acc.foundX = true
+    return {
+      count: acc.count,
+      nodeX: node
+    }
+  }
+
+  const count = acc.count + 1
+  const nodeX = acc.nodeX
+  const result = { count, nodeX }
+
+  if (result.count > target) {
+    return result
+  }
+
+  const resultLeft = dfsSearchCountWithX(node.left, target, x, result)
+  if (resultLeft.count > target) {
+    return resultLeft
+  }
+
+  const resultLeftRight = dfsSearchCountWithX(node.right, target, x, resultLeft)
+
+  return resultLeftRight
+}
+
+/**
+ * Perform DFS search on the TreeNode and returns the node count as soon as it exceeds target.
+ * @param {TreeNode} node TreeNode to be searched on.
+ * @param {number} target Target count.
+ * @param {number} acc Accumulated count.
+ * @return {number} Count of nodes. Return as soon as it exceeds target.
+ */
+const dfsSearchCount = (node, target, acc) => {
+  if (!node) {
     return acc
-
-    // TODO here.
   }
 
-  acc.current += 1
-
-  if (acc.current >= minimum) {
-    return acc
+  const count = acc + 1
+  if (count > target) {
+    return count
   }
 
-  const leftAcc = searchCount(node.left, x, minimum, acc)
-  if (leftAcc.current >= minimum) {
-    return leftAcc
+  const countLeft = dfsSearchCount(node.left, target, count)
+  if (countLeft > target) {
+    return countLeft
   }
 
-  const rightAcc = searchCount(node.right, x, minimum, leftAcc)
-  if (rightAcc.current >= minimum) {
-    return rightAcc
-  }
+  const countLeftRight = dfsSearchCount(node.right, target, countLeft)
 
-  return rightAcc
+  return countLeftRight
 }
 
 module.exports = btreeGameWinningMove
