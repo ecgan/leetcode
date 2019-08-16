@@ -4,7 +4,9 @@
   "description": "My solutions for LeetCode problems.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
