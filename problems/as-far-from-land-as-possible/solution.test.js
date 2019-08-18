@@ -41,5 +41,5 @@ test('One land in the middle', () => {
 
   const result = maxDistance(input)
 
-  expect(result).toBe(4)
+  expect(result).toBe(2)
 })
