@@ -13,7 +13,3 @@ Assume `n` is the number of nodes in the `root` tree.
 ### Time complexity: O(n)
 
 The solution will go through all the `n` nodes once.
-
-### Space complexity: O(1)
-
-The extra space used is always the same regardless of the tree size.
