@@ -23,3 +23,27 @@ test('With multiple same contiguous values', () => {
 
   expect(result).toBe(13)
 })
+
+test('With all same values', () => {
+  const nums = [4, 4, 4, 4]
+
+  const result = movesToMakeZigzag(nums)
+
+  expect(result).toBe(2)
+})
+
+test('values at odd index are smaller than values at even index', () => {
+  const nums = [4, 3, 4, 3]
+
+  const result = movesToMakeZigzag(nums)
+
+  expect(result).toBe(0)
+})
+
+test('values at even index are smaller than values at odd index', () => {
+  const nums = [3, 4, 3, 4]
+
+  const result = movesToMakeZigzag(nums)
+
+  expect(result).toBe(0)
+})
