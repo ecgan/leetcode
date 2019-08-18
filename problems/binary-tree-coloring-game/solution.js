@@ -58,7 +58,8 @@ const btreeGameWinningMove = (root, n, x) => {
 }
 
 /**
- * Perform DFS Search for X. Returns as soon as the accumulated count exceeds target. Also set acc.nodeX if x is found.
+ * Perform depth-first search for node count and x value, and set the result in acc.
+ * Returns as soon as the acc.count exceeds target.
  * @param {*} node
  * @param {*} target
  * @param {*} x
