@@ -31,3 +31,15 @@ test('All land', () => {
 
   expect(result).toBe(-1)
 })
+
+test('One land in the middle', () => {
+  const input = [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0]
+  ]
+
+  const result = maxDistance(input)
+
+  expect(result).toBe(4)
+})
