@@ -1,4 +1,31 @@
 /**
+ * Check if the word is within charMap.
+ * @param {*} word
+ * @param {*} charMap
+ */
+const isWordInCharMap = (word, charMap) => {
+  const wMap = new Map()
+  const ws = word.split('')
+
+  for (const w of ws) {
+    if (wMap.has(w)) {
+      wMap.set(w, wMap.get(w) + 1)
+    } else {
+      wMap.set(w, 1)
+    }
+
+    if (
+      (!charMap.get(w)) ||
+      (wMap.get(w) > charMap.get(w))
+    ) {
+      return false
+    }
+  }
+
+  return true
+}
+
+/**
  * @param {string[]} words
  * @param {string} chars
  * @return {number}
@@ -13,33 +40,11 @@ const countCharacters = function (words, chars) {
     }
   })
 
-  let length = 0
-
-  for (const word of words) {
-    let ok = true
-    const ws = word.split('')
-    const wMap = new Map()
-
-    for (const w of ws) {
-      if (wMap.has(w)) {
-        wMap.set(w, wMap.get(w) + 1)
-      } else {
-        wMap.set(w, 1)
-      }
-
-      if (
-        (!charMap.get(w)) ||
-        (wMap.get(w) > charMap.get(w))
-      ) {
-        ok = false
-        break
-      }
-    }
-
-    if (ok) {
-      length += word.length
-    }
-  }
+  const length = words.reduce((acc, cur) => {
+    return isWordInCharMap(cur, charMap)
+      ? acc + cur.length
+      : acc
+  }, 0)
 
   return length
 }
