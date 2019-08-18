@@ -1,113 +1,72 @@
-const createDistances = (grid) => {
-  const distance = Array.from(grid, (rowEl, rowInd) => {
-    return Array.from(rowEl, (colEl, colInd) => {
-      return null
-    })
-  })
+/**
+ * Convert land's adjacent waters into new lands, and return the new lands. This will mutate values in the input array.
+ * @param {*} input
+ * @param {*} land
+ */
+const getAdjacentLands = (input, land) => {
+  const nextLands = []
 
-  return distance
-}
-
-const getNextSquares = (distanceGrid, newSquare, squares) => {
-  if (
-    distanceGrid[newSquare.row] &&
-    distanceGrid[newSquare.row][newSquare.col] === null
-  ) {
-    squares.push(newSquare)
-    distanceGrid[newSquare.row][newSquare.col] = -1
-  }
-
-  return squares
-}
-
-const calculateDistanceInfo = (distanceGrid, distanceSquares, distanceSumDiffs) => {
-  const currentDistance = distanceSquares.length - 1
-  const squares = distanceSquares[currentDistance]
-
-  // const hrtimeSquares = process.hrtime()
-  for (const square of squares) {
-    distanceGrid[square.row][square.col] = currentDistance
-  }
-  // const hrtimeSquaresDiff = process.hrtime(hrtimeSquares)
-  // console.log('hrtimeSquaresDiff: ', hrtimeSquaresDiff[1] / 1000000)
-
-  // const hrtimeNextSquares = process.hrtime()
-  let nextSquares = []
-  for (const square of squares) {
-    nextSquares = getNextSquares(distanceGrid, { row: square.row - 1, col: square.col, sum: square.row - 1 + square.col, diff: square.row - 1 - square.col }, nextSquares)
-    nextSquares = getNextSquares(distanceGrid, { row: square.row, col: square.col - 1, sum: square.row + (square.col - 1), diff: square.row - (square.col - 1) }, nextSquares)
-    nextSquares = getNextSquares(distanceGrid, { row: square.row, col: square.col + 1, sum: square.row + (square.col + 1), diff: square.row - (square.col + 1) }, nextSquares)
-    nextSquares = getNextSquares(distanceGrid, { row: square.row + 1, col: square.col, sum: square.row + 1 + square.col, diff: square.row + 1 - square.col }, nextSquares)
-  }
-
-  // const hrtimeNextSquaresDiff = process.hrtime(hrtimeNextSquares)
-  // console.log('hrtimeNextSquaresDiff: ', hrtimeNextSquaresDiff[1] / 1000000)
-
-  if (nextSquares.length === 0) {
-    return {
-      distanceGrid: distanceGrid,
-      distanceSquares: distanceSquares,
-      distanceSumDiffs: distanceSumDiffs
+  if (land.row - 1 >= 0) {
+    if (input[land.row - 1] && input[land.row - 1][land.col] === 0) {
+      input[land.row - 1][land.col] = 1
+      nextLands.push({ row: land.row - 1, col: land.col })
     }
   }
 
-  distanceSquares.push(nextSquares)
-
-  const sumDiffs = nextSquares.reduce(
-    (acc, cur) => {
-      acc.minSum = Math.min(acc.minSum, cur.sum)
-      acc.maxSum = Math.max(acc.maxSum, cur.sum)
-      acc.minDiff = Math.min(acc.minDiff, cur.diff)
-      acc.maxDiff = Math.max(acc.maxDiff, cur.diff)
-
-      return acc
-    },
-    {
-      minSum: Number.MAX_SAFE_INTEGER,
-      maxSum: Number.MIN_SAFE_INTEGER,
-      minDiff: Number.MAX_SAFE_INTEGER,
-      maxDiff: Number.MIN_SAFE_INTEGER
+  if (land.row + 1 < input.length) {
+    if (input[land.row + 1] && input[land.row + 1][land.col] === 0) {
+      input[land.row + 1][land.col] = 1
+      nextLands.push({ row: land.row + 1, col: land.col })
     }
-  )
+  }
 
-  distanceSumDiffs.push(sumDiffs)
+  if (land.col - 1 >= 0) {
+    if (input[land.row][land.col - 1] === 0) {
+      input[land.row][land.col - 1] = 1
+      nextLands.push({ row: land.row, col: land.col - 1 })
+    }
+  }
 
-  return calculateDistanceInfo(distanceGrid, distanceSquares, distanceSumDiffs)
+  const maxCol = input[land.row].length
+  if (land.col + 1 < maxCol) {
+    if (input[land.row][land.col + 1] === 0) {
+      input[land.row][land.col + 1] = 1
+      nextLands.push({ row: land.row, col: land.col + 1 })
+    }
+  }
+
+  return nextLands
 }
 
-const getDistanceInfo = (grid, offices) => {
-  const emptyDistanceGrid = createDistances(grid)
+/**
+ * Perform breadth-first search through the input array, converting 0 to 1 while calculating the distance from the original lands. This will mutate values in the input array.
+ * @param {*} input Array.
+ * @param {*} lands Current lands. Array of { row, col }.
+ * @param {Number} distance Current distance of lands.
+ */
+const getDistance = (input, lands, distance) => {
+  const nextLands = []
 
-  const distanceOffices = []
-  distanceOffices.push(offices)
+  for (const land of lands) {
+    const tempNextLands = getAdjacentLands(input, land)
+    nextLands.push(...tempNextLands)
+  }
 
-  const distanceSumDiffs = []
-  const sumDiffs = distanceOffices[0].reduce(
-    (acc, cur) => {
-      acc.minSum = Math.min(acc.minSum, cur.sum)
-      acc.maxSum = Math.max(acc.maxSum, cur.sum)
-      acc.minDiff = Math.min(acc.minDiff, cur.diff)
-      acc.maxDiff = Math.max(acc.maxDiff, cur.diff)
+  if (nextLands.length === 0) {
+    return distance
+  }
 
-      return acc
-    },
-    {
-      minSum: Number.MAX_SAFE_INTEGER,
-      maxSum: Number.MIN_SAFE_INTEGER,
-      minDiff: Number.MAX_SAFE_INTEGER,
-      maxDiff: Number.MIN_SAFE_INTEGER
-    }
-  )
+  const nextDistance = distance + 1
 
-  distanceSumDiffs.push(sumDiffs)
-
-  return calculateDistanceInfo(emptyDistanceGrid, distanceOffices, distanceSumDiffs)
+  return getDistance(input, nextLands, nextDistance)
 }
 
-/// /////
-
-const maxDistance = (input) => {
-  const offices = []
+/**
+ * Iterare through all cells in input[row][col] and returns { lands[{row, col}], hasLand, hasWater }.
+ * @param {*} input
+ */
+const getInitialInfo = (input) => {
+  const lands = []
   let hasLand = false
   let hasWater = false
 
@@ -120,7 +79,7 @@ const maxDistance = (input) => {
       if (elj === 1) {
         hasLand = true
 
-        offices.push({
+        lands.push({
           row: i,
           col: j
         })
@@ -132,13 +91,25 @@ const maxDistance = (input) => {
     }
   }
 
-  if (!(hasLand && hasWater)) {
+  return {
+    lands,
+    hasLand,
+    hasWater
+  }
+}
+
+const maxDistance = (input) => {
+  const { lands, hasLand, hasWater } = getInitialInfo(input)
+
+  if (!hasWater) {
     return -1
   }
 
-  const distanceInfo = getDistanceInfo(input, offices)
+  if (!hasLand) {
+    return -1
+  }
 
-  return distanceInfo.distanceSquares.length - 1
+  return getDistance(input, lands, 0)
 }
 
 module.exports = maxDistance
