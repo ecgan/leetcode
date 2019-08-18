@@ -18,12 +18,26 @@ To run tests with jest:
 npm run test
 ```
 
+To run tests and generate code coverage report:
+
+```shell
+npm run test:coverage
+```
+
 ### Submitting / Running in LeetCode
 
 1. Find your problem in the [problems](/problems) folder.
 2. Copy the solution.
 3. Paste the code into LeetCode.
 4. Hit the Run or Submit button.
+
+### Pro-tip: URL / Folder Structure
+
+The folder structure in this repository resembles the URL for LeetCode's problems, e.g.:
+
+LeetCode URL for Two Sum problem: https://<span></span>leetcode.com/**problems/two-sum**
+
+Folder structure in this repository: https://<span></span>github.com/ecgan/leetcode/tree/master/**problems/two-sum**
 
 ## Solutions
 
@@ -33,6 +47,7 @@ npm run test
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash Table, two pointers, binary search, sort, set |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
+| 1145 | [Binary Tree Coloring Game](/problems/binary-tree-coloring-game/) | Medium | Tree, depth-first search |
 | 1150 | [Check If a Number Is Majority Element in a Sorted Array](/problems/is-a-a-majority-element) | Easy | Array, binary search |
 | 1153 | [String Transforms Into Another String](/problems/string-transforms-into-another-string) | Hard | Graph |
 | 1154 | [Day of the Year](/problems/ordinal-number-of-date) | Easy | - |
