@@ -1,5 +1,7 @@
 # leetcode
 
+[![Build Status](https://travis-ci.org/ecgan/leetcode.svg?branch=master)](https://travis-ci.org/ecgan/leetcode) [![codecov](https://codecov.io/gh/ecgan/leetcode/branch/master/graph/badge.svg)](https://codecov.io/gh/ecgan/leetcode)  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 My solutions for [LeetCode problems](https://leetcode.com/problemset/all/).
 
 ## Usage
@@ -44,6 +46,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | LeetCode # | Title | Difficulty | Topics |
 |-----------:|:------|:-----------|:-------|
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
+| 35 | [Search Insert Position](/problems/search-insert-position) | Easy | Array, binary search |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
