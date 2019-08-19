@@ -1,19 +1,22 @@
 const twoSum = (nums, target) => {
   const valueIndexMap = {}
 
+  let result = null
+
   for (let i = 0; i < nums.length; i++) {
     const num = nums[i]
     const complement = target - nums[i]
     const x = valueIndexMap[complement]
 
     if (x !== undefined) {
-      return [x, i]
+      result = [x, i]
+      break
     }
 
     valueIndexMap[num] = i
   }
 
-  return []
+  return result
 }
 
 module.exports = twoSum
