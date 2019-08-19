@@ -1,5 +1,7 @@
 # leetcode
 
+[![Build Status](https://travis-ci.org/ecgan/leetcode.svg?branch=master)](https://travis-ci.org/ecgan/leetcode) [![codecov](https://codecov.io/gh/ecgan/leetcode/branch/master/graph/badge.svg)](https://codecov.io/gh/ecgan/leetcode)  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 My solutions for [LeetCode problems](https://leetcode.com/problemset/all/).
 
 ## Usage
