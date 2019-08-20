@@ -57,6 +57,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1160 | [Find Words That Can Be Formed by Characters](/problems/find-words-that-can-be-formed-by-characters) | Easy | Array, hash table |
 | 1161 | [Maximum Level Sum of a Binary Tree](/problems/maximum-level-sum-of-a-binary-tree) | Medium | Graph |
 | 1162 | [As Far from Land as Possible](/problems/as-far-from-land-as-possible) | Medium | Breadth-first search, graph |
+| 1163 | [Last Substring in Lexicographical Order](/problems/last-substring-in-lexicographical-order) | Hard | String, suffix array |
 
 ## Questions / Issues
 

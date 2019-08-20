@@ -1,6 +1,6 @@
 const twoSum = require('./solution')
 
-test('Sample 1', () => {
+test('Example 1', () => {
   const nums = [2, 7, 11, 15]
   const target = 9
 

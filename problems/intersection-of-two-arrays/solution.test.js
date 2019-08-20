@@ -1,6 +1,6 @@
 const intersection = require('./solution')
 
-test('Sample 1', () => {
+test('Example 1', () => {
   const nums1 = [1, 2, 2, 1]
   const nums2 = [2, 2]
 
@@ -10,7 +10,7 @@ test('Sample 1', () => {
   expect(result).toContain(2)
 })
 
-test('Sample 2', () => {
+test('Example 2', () => {
   const nums1 = [4, 9, 5]
   const nums2 = [9, 4, 9, 8, 4]
 
