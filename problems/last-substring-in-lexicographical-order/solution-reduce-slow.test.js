@@ -1,4 +1,4 @@
-const lastSubstring = require('./solution')
+const lastSubstring = require('./solution-reduce-slow')
 
 test('Example 1', () => {
   const s = 'abab'
