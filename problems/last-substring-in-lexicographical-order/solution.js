@@ -1,15 +1,26 @@
 const lastSubstring = (s) => {
-  const result = [...s].reduceRight((acc, cur, idx) => {
-    const currentString = s.slice(idx)
+  let i = 0 // index of final substring.
+  let j = 1 // index of lookahead possible substring.
+  let k = 0 // moving offset to compare i & j.
 
-    if (currentString > acc) {
-      return currentString
+  while (j + k < s.length) {
+    if (s[i + k] < s[j + k]) {
+      i = j
+      j = i + 1
+      k = 0
     }
 
-    return acc
-  }, '')
+    if (s[i + k] === s[j + k]) {
+      k += 1
+    }
 
-  return result
+    if (s[i + k] > s[j + k]) {
+      j = j + k + 1
+      k = 0
+    }
+  }
+
+  return s.substring(i)
 }
 
 module.exports = lastSubstring
