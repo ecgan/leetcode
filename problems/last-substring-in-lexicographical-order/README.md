@@ -36,7 +36,12 @@ When `s[i]` and `s[j]` are the same (the first z and the second z in the above e
 
 When `s[i+k]` is bigger than `s[j+k]`, we just need to let `i` remain as is, continue move `j` forward to the next character at `j+k+1`, and reset `k` back to 0.
 
-When `s[i+k]` is smaller than `s[j+k]`, this means that the substring starting at `j` is a better result than the substring at `i`, so we just need to update `i` to be at `j`, and change `j` and `k` accordingly.
+When `s[i+k]` is smaller than `s[j+k]`, this means that the substring starting at `j` is a better result than the substring at `i`. At this point, there are two situations to consider: 
+
+1. When `j` is more than `i+k`: Consider an input `hhhccchhhddd`, when `i` is 0, `j` is 6, and `k` is 3, both `i` and `j` are pointing to `h`, and you are comparing the first `c` and the first `d`. You would want to set `i = j`. 
+2. When `j` is less than `i+k`: Consider an input `nnnp`, when `i` is 0, `j` is 1, and `k` is 2, you are comparing the last `n` and `p`. You would want to change `i` to point to `p`, so you need to set `i = i+k+1`. Note that in this case, even though `j` is equal to `i+1`, `j` is *not always* equal to `i+1` (see situation 1 above), hence you should not use `i = j+k`.
+
+So with the above considerations, when `s[i+k]` is smaller than `s[j+k]`, we can simply set `i = Math.max(i + k + 1, j)`.
 
 In the end, the result would be the substring starting at `i`.
 

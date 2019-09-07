@@ -5,7 +5,7 @@ const lastSubstring = (s) => {
 
   while (j + k < s.length) {
     if (s[i + k] < s[j + k]) {
-      i = j
+      i = Math.max(i + k + 1, j)
       j = i + 1
       k = 0
     }
