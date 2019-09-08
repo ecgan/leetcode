@@ -1,11 +1,10 @@
+const sortBy = require('lodash/sortBy')
+
 const getPrefixSum = (distance) => {
   const prefixSum = [0]
-  let sum = 0
 
   for (let i = 0; i < distance.length; i++) {
-    const element = distance[i]
-    sum += element
-    prefixSum.push(sum)
+    prefixSum.push(prefixSum[i] + distance[i])
   }
 
   return prefixSum
@@ -14,14 +13,10 @@ const getPrefixSum = (distance) => {
 const distanceBetweenBusStops = (distance, start, destination) => {
   const prefixSum = getPrefixSum(distance)
 
-  const startIndex = Math.min(start, destination)
-  const endIndex = Math.max(start, destination)
-
-  const startSum = prefixSum[startIndex]
-  const endSum = prefixSum[endIndex]
+  const [startIndex, endIndex] = sortBy([start, destination])
   const totalSum = prefixSum[prefixSum.length - 1]
 
-  const clockwise = Math.abs(endSum - startSum)
+  const clockwise = Math.abs(prefixSum[endIndex] - prefixSum[startIndex])
   const counterClockwise = totalSum - clockwise
 
   return Math.min(clockwise, counterClockwise)
