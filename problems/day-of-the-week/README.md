@@ -1,6 +1,6 @@
 # Day of the Week
 
-LeetCode #: [1183](https://leetcode.com/problems/day-of-the-week/)
+LeetCode #: [1185](https://leetcode.com/problems/day-of-the-week/)
 
 Difficulty: Easy.
 
