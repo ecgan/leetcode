@@ -63,6 +63,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1170 | [Compare Strings by Frequency of the Smallest Character](/problems/compare-strings-by-frequency-of-the-smallest-character) | Easy | Array, string |
 | 1184 | [Distance Between Bus Stops](/problems/distance-between-bus-stops) | Easy | Array |
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
+| 1207 | [Unique Number of Occurrences](/problems/unique-number-of-occurrences) | Easy | Hash table |
 
 ## Questions / Issues
 
