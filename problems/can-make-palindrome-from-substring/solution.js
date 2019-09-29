@@ -1,3 +1,9 @@
+/**
+ * Get an array of prefix sum where each value is an object
+ * that has the character in s as its key,
+ * and the count of the character as its value.
+ * @param {*} s
+ */
 const getPrefixSum = (s) => {
   const prefixSum = []
   const cur = {}
@@ -15,6 +21,12 @@ const getPrefixSum = (s) => {
   return prefixSum
 }
 
+/**
+ * Get an object representing the character count difference
+ * from two prefix sum values.
+ * @param {*} sumLeft The first, smaller prefix sum value.
+ * @param {*} sumRight The second, bigger prefix sum value.
+ */
 const getCharCount = (sumLeft, sumRight) => {
   const result = {}
 
@@ -29,7 +41,11 @@ const getCharCount = (sumLeft, sumRight) => {
   return result
 }
 
-const getNumOddsAllowed = (charCount) => {
+/**
+ * Get the number of odds needed to make the substring a palindrome.
+ * @param {*} charCount
+ */
+const getNumOddsNeeded = (charCount) => {
   let numOdds = 0
   for (const char in charCount) {
     if (charCount[char] % 2 === 1) {
@@ -37,13 +53,13 @@ const getNumOddsAllowed = (charCount) => {
     }
   }
 
-  const numOddsAllowed = Math.floor(numOdds / 2)
+  const numOddsNeeded = Math.floor(numOdds / 2)
 
-  return numOddsAllowed
+  return numOddsNeeded
 }
 
-const canMakePali = (numOddsAllowed, k) => {
-  if (numOddsAllowed <= k) {
+const canMakePali = (numOddsNeeded, k) => {
+  if (numOddsNeeded <= k) {
     return true
   }
 
@@ -68,9 +84,9 @@ const canMakePaliQueries = (s, queries) => {
     const sumRight = prefixSum[right]
 
     const charCount = getCharCount(sumLeft, sumRight)
-    const numOddsAllowed = getNumOddsAllowed(charCount)
+    const numOddsNeeded = getNumOddsNeeded(charCount)
 
-    const can = canMakePali(numOddsAllowed, k)
+    const can = canMakePali(numOddsNeeded, k)
 
     result.push(can)
   }
