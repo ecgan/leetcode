@@ -48,6 +48,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
 | 35 | [Search Insert Position](/problems/search-insert-position) | Easy | Array, binary search |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
+| 189 | [Rotate Array](/problems/rotate-array) | Easy | Array |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
 | 1145 | [Binary Tree Coloring Game](/problems/binary-tree-coloring-game/) | Medium | Tree, depth-first search |
@@ -61,8 +62,11 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1165 | [Single-Row Keyboard](/problems/single-row-keyboard) | Easy | String |
 | 1167 | [Minimum Cost to Connect Sticks](/problems/minimum-cost-to-connect-sticks) | Medium | Greedy |
 | 1170 | [Compare Strings by Frequency of the Smallest Character](/problems/compare-strings-by-frequency-of-the-smallest-character) | Easy | Array, string |
+| 1177 | [Can Make Palindrome from Substring](/problems/can-make-palindrome-from-substring) | Medium | Array, string |
 | 1184 | [Distance Between Bus Stops](/problems/distance-between-bus-stops) | Easy | Array |
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
+| 1207 | [Unique Number of Occurrences](/problems/unique-number-of-occurrences) | Easy | Hash table |
+| 1208 | [Get Equal Substrings Within Budget](/problems/get-equal-substrings-within-budget) | Medium | Array, sliding window |
 
 ## Questions / Issues
 
