@@ -61,6 +61,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1165 | [Single-Row Keyboard](/problems/single-row-keyboard) | Easy | String |
 | 1167 | [Minimum Cost to Connect Sticks](/problems/minimum-cost-to-connect-sticks) | Medium | Greedy |
 | 1170 | [Compare Strings by Frequency of the Smallest Character](/problems/compare-strings-by-frequency-of-the-smallest-character) | Easy | Array, string |
+| 1177 | [Can Make Palindrome from Substring](/problems/can-make-palindrome-from-substring) | Medium | Array, string |
 | 1184 | [Distance Between Bus Stops](/problems/distance-between-bus-stops) | Easy | Array |
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
 
