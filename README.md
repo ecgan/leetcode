@@ -66,6 +66,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1184 | [Distance Between Bus Stops](/problems/distance-between-bus-stops) | Easy | Array |
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
 | 1207 | [Unique Number of Occurrences](/problems/unique-number-of-occurrences) | Easy | Hash table |
+| 1208 | [Get Equal Substrings Within Budget](/problems/get-equal-substrings-within-budget) | Medium | Array, sliding window |
 
 ## Questions / Issues
 
