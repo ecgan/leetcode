@@ -5,7 +5,7 @@ const sortedIntersect = (nums1, nums2) => {
   let p1 = 0
   let p2 = 0
 
-  while (p1 < nums1.length & p2 < nums2.length) {
+  while (p1 < nums1.length && p2 < nums2.length) {
     if (nums1[p1] === nums2[p2]) {
       result.push(nums1[p1])
       p1++
