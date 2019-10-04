@@ -6,8 +6,7 @@ test('Example 1', () => {
 
   const result = intersection(nums1, nums2)
 
-  expect(result).toHaveLength(1)
-  expect(result).toContain(2)
+  expect(result).toEqual([2])
 })
 
 test('Example 2', () => {
@@ -16,7 +15,5 @@ test('Example 2', () => {
 
   const result = intersection(nums1, nums2)
 
-  expect(result).toHaveLength(2)
-  expect(result).toContain(9)
-  expect(result).toContain(4)
+  expect(result).toEqual([4, 9])
 })
