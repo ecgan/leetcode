@@ -1,4 +1,5 @@
 const sortBy = require('lodash/sortBy')
+const sortedIndex = require('lodash/sortedIndex')
 
 const sortedIntersect = (nums1, nums2) => {
   const result = []
@@ -13,11 +14,11 @@ const sortedIntersect = (nums1, nums2) => {
     }
 
     if (nums1[p1] > nums2[p2]) {
-      p2++
+      p2 = sortedIndex(nums2, nums1[p1])
     }
 
     if (nums1[p1] < nums2[p2]) {
-      p1++
+      p1 = sortedIndex(nums1, nums2[p2])
     }
   }
 
