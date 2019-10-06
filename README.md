@@ -67,6 +67,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
 | 1207 | [Unique Number of Occurrences](/problems/unique-number-of-occurrences) | Easy | Hash table |
 | 1208 | [Get Equal Substrings Within Budget](/problems/get-equal-substrings-within-budget) | Medium | Array, sliding window |
+| 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
 
 ## Questions / Issues
 
