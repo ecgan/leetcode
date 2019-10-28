@@ -50,6 +50,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 189 | [Rotate Array](/problems/rotate-array) | Easy | Array |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
+| 350 | [Intersection of Two Arrays II](/problems/intersection-of-two-arrays-ii) | Easy | Hash Table, two pointers, binary search, sort |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
 | 1145 | [Binary Tree Coloring Game](/problems/binary-tree-coloring-game/) | Medium | Tree, depth-first search |
 | 1150 | [Check If a Number Is Majority Element in a Sorted Array](/problems/is-a-a-majority-element) | Easy | Array, binary search |
@@ -67,6 +68,9 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1185 | [Day of the Week](/problems/day-of-the-week) | Easy | Array |
 | 1207 | [Unique Number of Occurrences](/problems/unique-number-of-occurrences) | Easy | Hash table |
 | 1208 | [Get Equal Substrings Within Budget](/problems/get-equal-substrings-within-budget) | Medium | Array, sliding window |
+| 1213 | [Intersection of Three Sorted Arrays](/problems/intersection-of-three-sorted-arrays) | Easy | Hash table, two pointers |
+| 1214 | [Two Sum BSTs](/problems/two-sum-bsts) | Medium | Binary search tree |
+| 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
 
 ## Questions / Issues
 
