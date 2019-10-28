@@ -70,6 +70,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1208 | [Get Equal Substrings Within Budget](/problems/get-equal-substrings-within-budget) | Medium | Array, sliding window |
 | 1213 | [Intersection of Three Sorted Arrays](/problems/intersection-of-three-sorted-arrays) | Easy | Hash table, two pointers |
 | 1214 | [Two Sum BSTs](/problems/two-sum-bsts) | Medium | Binary search tree |
+| 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
 
 ## Questions / Issues
 
