@@ -71,6 +71,8 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1213 | [Intersection of Three Sorted Arrays](/problems/intersection-of-three-sorted-arrays) | Easy | Hash table, two pointers |
 | 1214 | [Two Sum BSTs](/problems/two-sum-bsts) | Medium | Binary search tree |
 | 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
+| 1243 | [Array Transformation](/problems/array-transformation) | Easy | Array |
+| 1244 | [Design A Leaderboard](/problems/design-a-leaderboard) | Medium | Hash table, sort, design |
 
 ## Questions / Issues
 
