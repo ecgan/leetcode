@@ -73,6 +73,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
 | 1243 | [Array Transformation](/problems/array-transformation) | Easy | Array |
 | 1244 | [Design A Leaderboard](/problems/design-a-leaderboard) | Medium | Hash table, sort, design |
+| 1247 | [Minimum Swaps to Make Strings Equal](/problems/minimum-swaps-to-make-strings-equal) | Medium | String, greedy |
 
 ## Questions / Issues
 
