@@ -74,6 +74,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1243 | [Array Transformation](/problems/array-transformation) | Easy | Array |
 | 1244 | [Design A Leaderboard](/problems/design-a-leaderboard) | Medium | Hash table, sort, design |
 | 1247 | [Minimum Swaps to Make Strings Equal](/problems/minimum-swaps-to-make-strings-equal) | Medium | String, greedy |
+| 1256 | [Encode Number](/problems/encode-number) | Medium | Math, bit manipulation |
 
 ## Questions / Issues
 
