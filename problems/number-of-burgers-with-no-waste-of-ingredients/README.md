@@ -2,7 +2,7 @@
 
 LeetCode #: [1276](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/)
 
-Difficulty: Easy
+Difficulty: Medium
 
 Topic: Math, greedy.
 

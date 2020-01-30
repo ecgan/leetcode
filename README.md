@@ -80,7 +80,7 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1271 | [Hexspeak](/problems/hexspeak) | Easy | Math, string |
 | 1272 | [Remove Interval](/problems/remove-interval) | Medium | Math, line sweep |
 | 1275 | [Find Winner on a Tic Tac Toe Game](/problems/find-winner-on-a-tic-tac-toe-game) | Easy | Array |
-| 1276 | [Number of Burgers with No Waste of Ingredients](/problems/number-of-burgers-with-no-waste-of-ingredients) | Easy | Math, greedy |
+| 1276 | [Number of Burgers with No Waste of Ingredients](/problems/number-of-burgers-with-no-waste-of-ingredients) | Medium | Math, greedy |
 | 1313 | [Decompress Run-Length Encoded List](/problems/decompress-run-length-encoded-list) | Easy | Array |
 | 1314 | [Matrix Block Sum](/problems/matrix-block-sum) | Medium | Dynamic programming |
 | 1317 | [Convert Integer to the Sum of Two No-Zero Integers](/problems/convert-integer-to-the-sum-of-two-no-zero-integers) | Easy | Math |
