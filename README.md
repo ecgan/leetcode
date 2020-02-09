@@ -84,6 +84,12 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1313 | [Decompress Run-Length Encoded List](/problems/decompress-run-length-encoded-list) | Easy | Array |
 | 1314 | [Matrix Block Sum](/problems/matrix-block-sum) | Medium | Dynamic programming |
 | 1317 | [Convert Integer to the Sum of Two No-Zero Integers](/problems/convert-integer-to-the-sum-of-two-no-zero-integers) | Easy | Math |
+| 1342 | [Number of Steps to Reduce a Number to Zero](/problems/number-of-steps-to-reduce-a-number-to-zero) | Easy | Bit manipulation |
+| 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) | Medium | Array |
+| 1344 | [Angle Between Hands of a Clock](/problems/angle-between-hands-of-a-clock) | Medium | Math |
+| 1346 | [Check If N and Its Double Exist](/problems/check-if-n-and-its-double-exist) | Easy | Array |
+| 1347 | [Minimum Number of Steps to Make Two Strings Anagram](/problems/minimum-number-of-steps-to-make-two-strings-anagram) | Medium | String |
+| 1348 | [Tweet Counts Per Frequency](/problems/tweet-counts-per-frequency) | Medium | Design |
 
 ## Questions / Issues
 
