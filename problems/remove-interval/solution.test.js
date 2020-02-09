@@ -26,3 +26,12 @@ test('toBeRemoved[0] does not replace element', () => {
 
   expect(result).toStrictEqual([[-5, -4], [-3, -2], [4, 5], [8, 9]])
 })
+
+test('toBeRemoved[1] does not replace element', () => {
+  const intervals = [[0, 4], [9, 10]]
+  const toBeRemoved = [3, 8]
+
+  const result = removeInterval(intervals, toBeRemoved)
+
+  expect(result).toStrictEqual([[0, 3], [9, 10]])
+})
