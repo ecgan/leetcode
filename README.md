@@ -90,6 +90,9 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1346 | [Check If N and Its Double Exist](/problems/check-if-n-and-its-double-exist) | Easy | Array |
 | 1347 | [Minimum Number of Steps to Make Two Strings Anagram](/problems/minimum-number-of-steps-to-make-two-strings-anagram) | Medium | String |
 | 1348 | [Tweet Counts Per Frequency](/problems/tweet-counts-per-frequency) | Medium | Design |
+| 1356 | [Sort Integers by The Number of 1 Bits](/problems/sort-integers-by-the-number-of-1-bits) | Easy | Sort, bit manipulation |
+| 1357 | [Apply Discount Every n Orders](/problems/apply-discount-every-n-orders) | Medium | Design |
+| 1358 | [Number of Substrings Containing All Three Characters](/problems/number-of-substrings-containing-all-three-characters) | Medium | String |
 
 ## Questions / Issues
 
