@@ -4,9 +4,7 @@ const validateBinaryTreeNodes = (n, leftChild, rightChild) => {
   const rightSet = new Set(rightChild)
 
   for (let i = 0; i < n; i++) {
-    if (nextChildQueue[0] === i) {
-      nextChildQueue.shift()
-    }
+    nextChildQueue.shift()
 
     const left = leftChild[i]
     const right = rightChild[i]
