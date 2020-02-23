@@ -93,6 +93,9 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1356 | [Sort Integers by The Number of 1 Bits](/problems/sort-integers-by-the-number-of-1-bits) | Easy | Sort, bit manipulation |
 | 1357 | [Apply Discount Every n Orders](/problems/apply-discount-every-n-orders) | Medium | Design |
 | 1358 | [Number of Substrings Containing All Three Characters](/problems/number-of-substrings-containing-all-three-characters) | Medium | String |
+| 1360 | [Number of Days Between Two Dates](/problems/number-of-days-between-two-dates) | Easy | - |
+| 1361 | [Validate Binary Tree Nodes](/problems/validate-binary-tree-nodes) | Medium | Graph |
+| 1362 | [Closest Divisors](/problems/closest-divisors) | Medium | Math |
 
 ## Questions / Issues
 
