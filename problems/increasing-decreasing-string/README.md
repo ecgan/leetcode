@@ -1,4 +1,4 @@
-# Hexspeak
+# Increasing Decreasing String
 
 LeetCode #: [1370](https://leetcode.com/problems/increasing-decreasing-string/)
 
