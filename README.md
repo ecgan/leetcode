@@ -96,6 +96,8 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1360 | [Number of Days Between Two Dates](/problems/number-of-days-between-two-dates) | Easy | - |
 | 1361 | [Validate Binary Tree Nodes](/problems/validate-binary-tree-nodes) | Medium | Graph |
 | 1362 | [Closest Divisors](/problems/closest-divisors) | Medium | Math |
+| 1370 | [Increasing Decreasing String](/problems/increasing-decreasing-string) | Easy | String, sort |
+| 1374 | [Generate a String With Characters That Have Odd Counts](/problems/generate-a-string-with-characters-that-have-odd-counts) | Easy | String |
 
 ## Questions / Issues
 
