@@ -98,6 +98,11 @@ Folder structure in this repository: https://<span></span>github.com/ecgan/leetc
 | 1362 | [Closest Divisors](/problems/closest-divisors) | Medium | Math |
 | 1370 | [Increasing Decreasing String](/problems/increasing-decreasing-string) | Easy | String, sort |
 | 1374 | [Generate a String With Characters That Have Odd Counts](/problems/generate-a-string-with-characters-that-have-odd-counts) | Easy | String |
+| 1385 | [Find the Distance Value Between Two Arrays](/problems/find-the-distance-value-between-two-arrays) | Easy | Array |
+| 1386 | [Cinema Seat Allocation](/problems/cinema-seat-allocation) | Medium | Array, Greedy |
+| 1387 | [Sort Integers by The Power Value](/problems/sort-integers-by-the-power-value) | Medium | Sort, Graph |
+| 1389 | [Create Target Array in the Given Order](/problems/create-target-array-in-the-given-order) | Easy | Array |
+| 1390 | [Four Divisors](/problems/four-divisors) | Medium | Math |
 
 ## Questions / Issues
 
