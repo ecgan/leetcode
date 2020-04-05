@@ -15,7 +15,7 @@ const binaryIncrement = (s) => {
         result = '1' + result
         break
       }
-    } else if (result[i] === '0') {
+    } else {
       result = replaceChar(result, i, '1')
       break
     }
