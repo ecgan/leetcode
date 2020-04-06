@@ -14,10 +14,13 @@ const isOverlapVerticalEdge = (circle, corner1, corner2) => {
   const [x1, y1] = corner1
   const [, y2] = corner2
 
-  if (x_center + radius >= x1 && x_center - radius <= x1) {
-    if (y_center >= y1 && y_center <= y2) {
-      return true
-    }
+  if (
+    x_center + radius >= x1 &&
+    x_center - radius <= x1 &&
+    y_center >= y1 &&
+    y_center <= y2
+  ) {
+    return true
   }
 
   return false
@@ -28,10 +31,13 @@ const isOverlapHorizontalEdge = (circle, corner1, corner2) => {
   const [x1, y1] = corner1
   const [x2] = corner2
 
-  if (y_center + radius >= y1 && y_center - radius <= y1) {
-    if (x_center >= x1 && x_center <= x2) {
-      return true
-    }
+  if (
+    y_center + radius >= y1 &&
+    y_center - radius <= y1 &&
+    x_center >= x1 &&
+    x_center <= x2
+  ) {
+    return true
   }
 
   return false
