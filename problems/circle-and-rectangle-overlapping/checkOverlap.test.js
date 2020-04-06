@@ -56,3 +56,17 @@ test('Example 4', () => {
 
   expect(result).toBe(false)
 })
+
+test('Overlap at horizontal edge should return true', () => {
+  const radius = 1
+  const x_center = 2
+  const y_center = 2
+  const x1 = 1
+  const y1 = -1
+  const x2 = 3
+  const y2 = 1
+
+  const result = checkOverlap(radius, x_center, y_center, x1, y1, x2, y2)
+
+  expect(result).toBe(true)
+})
