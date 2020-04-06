@@ -105,6 +105,8 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1387 | [Sort Integers by The Power Value](/problems/sort-integers-by-the-power-value) | Medium | Sort, Graph |
 | 1389 | [Create Target Array in the Given Order](/problems/create-target-array-in-the-given-order) | Easy | Array |
 | 1390 | [Four Divisors](/problems/four-divisors) | Medium | Math |
+| 1401 | [Circle and Rectangle Overlapping](/problems/circle-and-rectangle-overlapping) | Medium | Geometry |
+| 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one) | Medium | String, Bit Manipulation |
 
 ## Questions / Issues
 
