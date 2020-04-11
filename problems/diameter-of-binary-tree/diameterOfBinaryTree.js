@@ -1,33 +1,27 @@
 /**
- * Gets a count object consists of treeCount and longBranchCount.
- * @param {*} node Tree node.
+ * Get max diameter of the tree.
+ * While traversing the tree, it will keep track of the max diameter.
+ * @param {*} node
  */
-const getCount = (node) => {
-  if (!node) {
-    return {
-      treeCount: 0,
-      longBranchCount: 0
+const getDiameter = (node) => {
+  let maxDiameter = 0
+
+  const getHeight = (node) => {
+    if (!node) {
+      return 0
     }
+
+    const left = getHeight(node.left)
+    const right = getHeight(node.right)
+
+    maxDiameter = Math.max(maxDiameter, left + right)
+
+    return Math.max(left, right) + 1
   }
 
-  const left = getCount(node.left)
-  const right = getCount(node.right)
+  getHeight(node)
 
-  const treeCount = Math.max(
-    1 + left.longBranchCount + right.longBranchCount,
-    left.treeCount,
-    right.treeCount
-  )
-
-  const longBranchCount = Math.max(
-    1 + left.longBranchCount,
-    1 + right.longBranchCount
-  )
-
-  return {
-    treeCount,
-    longBranchCount
-  }
+  return maxDiameter
 }
 
 /**
@@ -42,9 +36,9 @@ const getCount = (node) => {
  * @return {number}
  */
 const diameterOfBinaryTree = function (root) {
-  const count = getCount(root)
+  const diameter = getDiameter(root)
 
-  return Math.max(0, count.treeCount - 1)
+  return diameter
 }
 
 module.exports = diameterOfBinaryTree
