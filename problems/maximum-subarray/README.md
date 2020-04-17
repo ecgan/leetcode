@@ -4,7 +4,7 @@ LeetCode #: [53](https://leetcode.com/problems/maximum-subarray/)
 
 Difficulty: Easy
 
-Topics: Dynamic Programming.
+Topics: Array, Divide and Conquer, Dynamic Programming.
 
 ## Problem
 
