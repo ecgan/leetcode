@@ -49,10 +49,18 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 |-----------:|:------|:-----------|:-------|
 | 1 | [Two Sum](/problems/two-sum) | Easy | Array, hash table |
 | 35 | [Search Insert Position](/problems/search-insert-position) | Easy | Array, binary search |
+| 53 | [Maximum Subarray](/problems/maximum-subarray) | Easy | Array, Divide and Conquer, Dynamic Programming |
+| 70 | [Climbing Stairs](/problems/climbing-stairs) | Easy | Dynamic Programming |
+| 121 | [Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock) | Easy | Array, Dynamic Programming |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 189 | [Rotate Array](/problems/rotate-array) | Easy | Array |
+| 198 | [House Robber](/problems/house-robber) | Easy | Dynamic Programming |
+| 303 | [Range Sum Query - Immutable](/problems/range-sum-query-immutable) | Easy | Dynamic Programming |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
 | 350 | [Intersection of Two Arrays II](/problems/intersection-of-two-arrays-ii) | Easy | Hash Table, two pointers, binary search, sort |
+| 392 | [Is Subsequence](/problems/is-subsequence) | Easy | Binary Search, Dynamic Programming, Greedy |
+| 746 | [Min Cost Climbing Stairs](/problems/min-cost-climbing-stairs) | Easy | Array, Dynamic Programming |
+| 1025 | [Divisor Game](/problems/divisor-game) | Easy | Math, Dynamic Programming |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
 | 1145 | [Binary Tree Coloring Game](/problems/binary-tree-coloring-game/) | Medium | Tree, depth-first search |
 | 1150 | [Check If a Number Is Majority Element in a Sorted Array](/problems/is-a-a-majority-element) | Easy | Array, binary search |
