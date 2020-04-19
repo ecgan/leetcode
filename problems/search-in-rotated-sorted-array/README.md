@@ -31,3 +31,13 @@ Example 2:
 Input: nums = [4,5,6,7,0,1,2], target = 3
 Output: -1
 ```
+
+## Solution Explanation
+
+The solution here is similar to normal binary search but with more comparisons and checkings.
+
+## Complexity Analysis
+
+Time complexity: O(log N)
+
+Space complexity: O(1)

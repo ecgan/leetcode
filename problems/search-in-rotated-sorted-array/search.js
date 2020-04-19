@@ -1,48 +1,44 @@
-const sortedIndexOf = require('lodash/sortedIndexOf')
-
-const getSplitIndex = (nums) => {
-  const startValue = nums[0]
-  const endValue = nums[nums.length - 1]
-
-  if (startValue <= endValue) {
-    return nums.length
-  }
-
-  let leftIdx = 0
-  let rightIdx = nums.length
-
-  while (rightIdx > leftIdx) {
-    const mid = Math.floor((leftIdx + rightIdx) / 2)
-
-    if (nums[mid] >= startValue) {
-      leftIdx = mid + 1
-    } else {
-      rightIdx = mid
-    }
-  }
-
-  return leftIdx
-}
-
 /**
  * @param {number[]} nums
  * @param {number} target
  * @return {number}
  */
 const search = function (nums, target) {
-  const idx = getSplitIndex(nums)
+  let leftIdx = 0
+  let rightIdx = nums.length - 1
+  let midIdx = Math.floor((leftIdx + rightIdx) / 2)
 
-  if (target >= nums[0]) {
-    const sorted = nums.splice(0, idx)
-    return sortedIndexOf(sorted, target)
-  }
+  do {
+    if (nums[leftIdx] === target) return leftIdx
+    if (nums[rightIdx] === target) return rightIdx
+    if (nums[midIdx] === target) return midIdx
 
-  const sorted = nums.splice(idx)
-  const foundIndex = sortedIndexOf(sorted, target)
+    if (
+      (
+        target > nums[leftIdx] &&
+        target > nums[midIdx] &&
+        nums[leftIdx] < nums[midIdx]
+      ) ||
+      (
+        target < nums[leftIdx] &&
+        target < nums[midIdx] &&
+        nums[leftIdx] < nums[midIdx]
+      ) ||
+      (
+        target > nums[midIdx] &&
+        target < nums[rightIdx] &&
+        nums[midIdx] < nums[rightIdx]
+      )
+    ) {
+      leftIdx = midIdx + 1
+    } else {
+      rightIdx = midIdx - 1
+    }
 
-  return (foundIndex === -1)
-    ? foundIndex
-    : foundIndex + idx
+    midIdx = Math.floor((leftIdx + rightIdx) / 2)
+  } while (rightIdx > leftIdx)
+
+  return -1
 }
 
 module.exports = search
