@@ -15,36 +15,40 @@
  * };
  */
 
-const binarySearchRow = (binaryMatrix, row, leftIdx, rightIdx) => {
-  if (leftIdx > rightIdx) return -1
+const getBinarySearch = (binaryMatrix) => {
+  const binarySearch = (row, leftIdx, rightIdx) => {
+    if (leftIdx > rightIdx) return -1
 
-  const right = binaryMatrix.get(row, rightIdx)
-  if (right === 0) {
-    return -1
+    const right = binaryMatrix.get(row, rightIdx)
+    if (right === 0) {
+      return -1
+    }
+
+    const left = binaryMatrix.get(row, leftIdx)
+    if (left === 1) {
+      return leftIdx
+    }
+
+    // at this point, left is 0, and right is 1.
+    // find the middle value and
+    // do recursive call with new leftIdx and rightIdx.
+
+    const midIdx = Math.floor((leftIdx + rightIdx) / 2)
+    const mid = binaryMatrix.get(row, midIdx)
+    if (mid === 0) {
+      const foundRight = binarySearch(row, mid + 1, rightIdx - 1)
+      return (foundRight !== -1)
+        ? foundRight
+        : rightIdx
+    } else {
+      const foundLeft = binarySearch(row, leftIdx + 1, midIdx - 1)
+      return (foundLeft !== -1)
+        ? foundLeft
+        : midIdx
+    }
   }
 
-  const left = binaryMatrix.get(row, leftIdx)
-  if (left === 1) {
-    return leftIdx
-  }
-
-  // at this point, left is 0, and right is 1.
-  // find the middle value and
-  // do recursive call with new leftIdx and rightIdx.
-
-  const midIdx = Math.floor((leftIdx + rightIdx) / 2)
-  const mid = binaryMatrix.get(row, midIdx)
-  if (mid === 0) {
-    const foundRight = binarySearchRow(binaryMatrix, row, mid + 1, rightIdx - 1)
-    return (foundRight !== -1)
-      ? foundRight
-      : rightIdx
-  } else {
-    const foundLeft = binarySearchRow(binaryMatrix, row, leftIdx + 1, midIdx - 1)
-    return (foundLeft !== -1)
-      ? foundLeft
-      : midIdx
-  }
+  return binarySearch
 }
 
 /**
@@ -52,11 +56,12 @@ const binarySearchRow = (binaryMatrix, row, leftIdx, rightIdx) => {
  * @return {number}
  */
 const leftMostColumnWithOne = function (binaryMatrix) {
+  const binarySearch = getBinarySearch(binaryMatrix)
   const [n, m] = binaryMatrix.dimensions()
   let foundIdx = m
 
   for (let i = 0; i < n; i++) {
-    const idx = binarySearchRow(binaryMatrix, i, 0, foundIdx - 1)
+    const idx = binarySearch(i, 0, foundIdx - 1)
 
     if (idx !== -1) {
       foundIdx = idx
