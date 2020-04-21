@@ -27,7 +27,8 @@ class Counter {
     return (
       c >= r &&
       r >= o &&
-      o >= a
+      o >= a &&
+      a >= 0
     )
   }
 

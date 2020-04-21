@@ -31,3 +31,11 @@ test('Example 4', () => {
 
   expect(result).toBe(-1)
 })
+
+test('kcroa', () => {
+  const croakOfFrogs = 'kcroa'
+
+  const result = minNumberOfFrogs(croakOfFrogs)
+
+  expect(result).toBe(-1)
+})
