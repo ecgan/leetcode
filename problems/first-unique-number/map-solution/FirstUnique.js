@@ -2,8 +2,7 @@
  * @param {number[]} nums
  */
 const FirstUnique = function (nums) {
-  this.unique = new Set()
-  this.duplicate = new Set()
+  this.map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
     const num = nums[i]
@@ -15,11 +14,13 @@ const FirstUnique = function (nums) {
  * @return {number}
  */
 FirstUnique.prototype.showFirstUnique = function () {
-  if (this.unique.size === 0) {
-    return -1
+  for (const [key, value] of this.map.entries()) {
+    if (value === 1) {
+      return key
+    }
   }
 
-  return this.unique.values().next().value
+  return -1
 }
 
 /**
@@ -27,13 +28,11 @@ FirstUnique.prototype.showFirstUnique = function () {
  * @return {void}
  */
 FirstUnique.prototype.add = function (value) {
-  if (!this.unique.has(value) && !this.duplicate.has(value)) {
-    this.unique.add(value)
-    return
+  if (this.map.has(value)) {
+    this.map.set(value, this.map.get(value) + 1)
+  } else {
+    this.map.set(value, 1)
   }
-
-  this.unique.delete(value)
-  this.duplicate.add(value)
 }
 
 /**
