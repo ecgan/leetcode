@@ -13,30 +13,26 @@
  * @return {function}
  */
 const solution = function (isBadVersion) {
-  const search = (left, right) => {
-    if (right - left <= 1) {
-      const isLeftBad = isBadVersion(left)
-      return (isLeftBad)
-        ? left
-        : right
-    }
-
-    const mid = Math.floor((left + right) / 2)
-
-    const isMidBad = isBadVersion(mid)
-    if (isMidBad) {
-      return search(left, mid)
-    } else {
-      return search(mid + 1, right)
-    }
-  }
-
   /**
    * @param {integer} n Total versions
    * @return {integer} The first bad version
    */
   return function (n) {
-    return search(1, n)
+    let left = 1
+    let right = n
+
+    while (left < right) {
+      const mid = left + Math.floor((right - left) / 2)
+
+      const isMidBad = isBadVersion(mid)
+      if (isMidBad) {
+        right = mid
+      } else {
+        left = mid + 1
+      }
+    }
+
+    return left
   }
 }
 
