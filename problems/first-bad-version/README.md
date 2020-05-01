@@ -25,3 +25,9 @@ call isBadVersion(4) -> true
 
 Then 4 is the first bad version.
 ```
+
+## Complexity Analysis
+
+Time complexity: O(log n) with binary search.
+
+Space complexity: O(1) constant space.
