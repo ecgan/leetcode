@@ -1,4 +1,4 @@
-# Middle of the Linked List
+# Min Stack
 
 LeetCode #: [155](https://leetcode.com/problems/min-stack/)
 
