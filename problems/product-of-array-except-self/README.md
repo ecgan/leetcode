@@ -1,6 +1,6 @@
 # Product of Array Except Self
 
-LeetCode #: [283](https://leetcode.com/problems/product-of-array-except-self/)
+LeetCode #: [238](https://leetcode.com/problems/product-of-array-except-self/)
 
 Difficulty: Medium
 
