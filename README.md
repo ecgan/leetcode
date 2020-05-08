@@ -115,6 +115,10 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1390 | [Four Divisors](/problems/four-divisors) | Medium | Math |
 | 1401 | [Circle and Rectangle Overlapping](/problems/circle-and-rectangle-overlapping) | Medium | Geometry |
 | 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one) | Medium | String, Bit Manipulation |
+| 1413 | [Minimum Value to Get Positive Step by Step Sum](/problems/minimum-value-to-get-positive-step-by-step-sum) | Easy | Array |
+| 1417 | [Reformat The String](/problems/reformat-the-string) | Easy | String |
+| 1418 | [Display Table of Food Orders in a Restaurant](/problems/display-table-of-food-orders-in-a-restaurant) | Medium | Hash Table |
+| 1419 | [Minimum Number of Frogs Croaking](/problems/minimum-number-of-frogs-croaking) | Medium | String |
 
 ## Questions / Issues
 
