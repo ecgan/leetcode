@@ -10,3 +10,10 @@ test('Example 1', () => {
   trie.insert('app')
   expect(trie.search('app')).toBe(true)
 })
+
+test('search for invalid string should return false', () => {
+  const trie = new Trie()
+
+  trie.insert('apple')
+  expect(trie.search('orange')).toBe(false)
+})
