@@ -1,4 +1,4 @@
-const firstUniqChar = require('./ firstUniqChar')
+const firstUniqChar = require('./firstUniqChar')
 
 test('Example 1', () => {
   const s = 'leetcode'
