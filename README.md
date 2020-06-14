@@ -176,6 +176,10 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1428 | [Leftmost Column with at Least a One](/problems/leftmost-column-with-at-least-a-one) | - | - |
 | 1429 | [First Unique Number](/problems/first-unique-number) | - | - |
 | 1430 | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) | - | - |
+| 1475 | [Final Prices With a Special Discount in a Shop](/problems/final-prices-with-a-special-discount-in-a-shop) | Easy | Array |
+| 1476 | [Subrectangle Queries](/problems/subrectangle-queries) | Medium | Array |
+| 1480 | [Running Sum of 1d Array](/problems/running-sum-of-1d-array) | Easy | Array |
+| 1481 | [Least Number of Unique Integers after K Removals](/problems/least-number-of-unique-integers-after-k-removals) | Medium | Array, Sort |
 
 ## Questions / Issues
 
