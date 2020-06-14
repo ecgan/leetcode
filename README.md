@@ -55,33 +55,60 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 55 | [Jump Game](/problems/jump-game) | Medium | Array, Greedy |
 | 64 | [Minimum Path Sum](/problems/minimum-path-sum) | Medium | Array, Dynamic Programming |
 | 70 | [Climbing Stairs](/problems/climbing-stairs) | Easy | Dynamic Programming |
+| 72 | [Edit Distance](/problems/edit-distance) | Hard | String, Dynamic Programming |
 | 121 | [Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock) | Easy | Array, Dynamic Programming |
 | 122 | [Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii) | Easy | Array, Greedy |
 | 124 | [Binary Tree Maximum Path Sum](/problems/binary-tree-maximum-path-sum) | Hard | Tree, Depth-first Search |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
 | 146 | [LRU Cache](/problems/lru-cache) | Medium | Design |
 | 155 | [Min Stack](/problems/min-stack) | Easy | Stack, Design |
+| 169 | [Majority Element](/problems/majority-element) | Easy | Array, Divide and Conquer, Bit Manipulation |
 | 189 | [Rotate Array](/problems/rotate-array) | Easy | Array |
 | 198 | [House Robber](/problems/house-robber) | Easy | Dynamic Programming |
 | 200 | [Number of Islands](/problems/number-of-islands) | Medium | Depth-first Search, Breadth-first Search, Union Find |
 | 201 | [Bitwise AND of Numbers Range](/problems/bitwise-and-of-numbers-range) | Medium | Bit Manipulation |
 | 202 | [Happy Number](/problems/happy-number) | Easy | Hash Table, Math |
+| 207 | [Course Schedule](/problems/course-schedule) | Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort |
+| 208 | [Implement Trie (Prefix Tree)](/problems/implement-trie-prefix-tree) | Medium | Design, Trie |
 | 221 | [Maximal Square](/problems/maximal-square) | Medium | Dynamic Programming |
+| 230 | [Kth Smallest Element in a BST](/problems/kth-smallest-element-in-a-bst) | Medium | Binary Search, Tree |
 | 238 | [Product of Array Except Self](/problems/product-of-array-except-self) | Medium | Array |
+| 278 | [First Bad Version](/problems/first-bad-version) | Easy | Binary Search |
 | 283 | [Move Zeroes](/problems/move-zeroes) | Easy | Array, Two Pointers |
 | 303 | [Range Sum Query - Immutable](/problems/range-sum-query-immutable) | Easy | Dynamic Programming |
+| 328 | [Odd Even Linked List](/problems/odd-even-linked-list) | Medium | Linked List |
+| 338 | [Counting Bits](/problems/counting-bits) | Medium | Dynamic Programming, Bit Manipulation |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
 | 350 | [Intersection of Two Arrays II](/problems/intersection-of-two-arrays-ii) | Easy | Hash Table, two pointers, binary search, sort |
+| 367 | [Valid Perfect Square](/problems/valid-perfect-square) | Easy | Math, Binary Search |
+| 383 | [Ransom Note](/problems/ransom-note) | Easy | String |
+| 387 | [First Unique Character in a String](/problems/first-unique-character-in-a-string) | Easy | Hash Table, String |
 | 392 | [Is Subsequence](/problems/is-subsequence) | Easy | Binary Search, Dynamic Programming, Greedy |
+| 402 | [Remove K Digits](/problems/remove-k-digits) | Medium | Stack, Greedy |
+| 438 | [Find All Anagrams in a String](/problems/find-all-anagrams-in-a-string) | Medium | Hash Table |
+| 451 | [Sort Characters By Frequency](/problems/sort-characters-by-frequency) | Medium | Hash Table, Heap |
+| 476 | [Number Complement](/problems/number-complement) | Easy | Bit Manipulation |
 | 525 | [Contiguous Array](/problems/contiguous-array) | Medium | Hash Table |
+| 540 | [Single Element in a Sorted Array](/problems/single-element-in-a-sorted-array) | Medium | - |
 | 543 | [Diameter of Binary Tree](/problems/diameter-of-binary-tree) | Easy | Tree |
 | 560 | [Subarray Sum Equals K](/problems/subarray-sum-equals-k) | Medium | Array, Hash Table |
+| 567 | [Permutation in String](/problems/permutation-in-string) | Medium | Two Pointers, Sliding Window |
 | 678 | [Valid Parenthesis String](/problems/valid-parenthesis-string) | Medium | String |
+| 733 | [Flood Fill](/problems/flood-fill) | Easy | Depth-first Search |
 | 746 | [Min Cost Climbing Stairs](/problems/min-cost-climbing-stairs) | Easy | Array, Dynamic Programming |
+| 771 | [Jewels and Stones](/problems/jewels-and-stones) | Easy | Hash Table |
 | 844 | [Backspace String Compare](/problems/backspace-string-compare) | Easy | Two Pointers, Stack |
 | 876 | [Middle of the Linked List](/problems/middle-of-the-linked-list) | Easy | Linked List |
+| 886 | [Possible Bipartition](/problems/possible-bipartition) | Medium | Depth-first Search |
+| 901 | [Online Stock Span](/problems/online-stock-span) | Medium | Stack |
+| 918 | [Maximum Sum Circular Subarray](/problems/maximum-sum-circular-subarray) | Medium | Array |
+| 973 | [K Closest Points to Origin](/problems/k-closest-points-to-origin) | Medium | Divide and Conquer, Heap, Sort |
+| 986 | [Interval List Intersections](/problems/interval-list-intersections) | Medium | Two Pointers |
+| 993 | [Cousins in Binary Tree](/problems/cousins-in-binary-tree) | Easy | Tree, Breadth-first Search |
+| 997 | [Find the Town Judge](/problems/find-the-town-judge) | Easy | Graph |
 | 1008 | [Construct Binary Search Tree from Preorder Traversal](/problems/construct-binary-search-tree-from-preorder-traversal) | Medium | Tree |
 | 1025 | [Divisor Game](/problems/divisor-game) | Easy | Math, Dynamic Programming |
+| 1035 | [Uncrossed Lines](/problems/uncrossed-lines) | Medium | Array |
 | 1046 | [Last Stone Weight](/problems/last-stone-weight) | Easy | Heap, Greedy |
 | 1143 | [Longest Common Subsequence](/problems/longest-common-subsequence) | Medium | Dynamic Programming |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
@@ -104,6 +131,7 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1213 | [Intersection of Three Sorted Arrays](/problems/intersection-of-three-sorted-arrays) | Easy | Hash table, two pointers |
 | 1214 | [Two Sum BSTs](/problems/two-sum-bsts) | Medium | Binary search tree |
 | 1217 | [Play with Chips](/problems/play-with-chips) | Easy | Array, math, greedy |
+| 1232 | [Check If It Is a Straight Line](/problems/check-if-it-is-a-straight-line) | Easy | Array, Math, Geometry |
 | 1243 | [Array Transformation](/problems/array-transformation) | Easy | Array |
 | 1244 | [Design A Leaderboard](/problems/design-a-leaderboard) | Medium | Hash table, sort, design |
 | 1247 | [Minimum Swaps to Make Strings Equal](/problems/minimum-swaps-to-make-strings-equal) | Medium | String, greedy |
@@ -114,6 +142,7 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1272 | [Remove Interval](/problems/remove-interval) | Medium | Math, line sweep |
 | 1275 | [Find Winner on a Tic Tac Toe Game](/problems/find-winner-on-a-tic-tac-toe-game) | Easy | Array |
 | 1276 | [Number of Burgers with No Waste of Ingredients](/problems/number-of-burgers-with-no-waste-of-ingredients) | Medium | Math, greedy |
+| 1277 | [Count Square Submatrices with All Ones](/problems/count-square-submatrices-with-all-ones) | Medium | Array, Dynamic Programming |
 | 1313 | [Decompress Run-Length Encoded List](/problems/decompress-run-length-encoded-list) | Easy | Array |
 | 1314 | [Matrix Block Sum](/problems/matrix-block-sum) | Medium | Dynamic programming |
 | 1317 | [Convert Integer to the Sum of Two No-Zero Integers](/problems/convert-integer-to-the-sum-of-two-no-zero-integers) | Easy | Math |
@@ -147,6 +176,10 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1428 | [Leftmost Column with at Least a One](/problems/leftmost-column-with-at-least-a-one) | - | - |
 | 1429 | [First Unique Number](/problems/first-unique-number) | - | - |
 | 1430 | [Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) | - | - |
+| 1475 | [Final Prices With a Special Discount in a Shop](/problems/final-prices-with-a-special-discount-in-a-shop) | Easy | Array |
+| 1476 | [Subrectangle Queries](/problems/subrectangle-queries) | Medium | Array |
+| 1480 | [Running Sum of 1d Array](/problems/running-sum-of-1d-array) | Easy | Array |
+| 1481 | [Least Number of Unique Integers after K Removals](/problems/least-number-of-unique-integers-after-k-removals) | Medium | Array, Sort |
 
 ## Questions / Issues
 
