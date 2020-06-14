@@ -1,4 +1,4 @@
-const findJudge = require('./ findJudge')
+const findJudge = require('./findJudge')
 
 test('Example 1', () => {
   const N = 2
