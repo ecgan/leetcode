@@ -1,6 +1,6 @@
 {
   "name": "leetcode",
-  "version": "1.26.0",
+  "version": "1.27.0",
   "description": "My solutions for LeetCode problems.",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,6 @@
     "leettree": "^0.3.0"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   }
 }
