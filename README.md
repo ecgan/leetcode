@@ -180,6 +180,9 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1476 | [Subrectangle Queries](/problems/subrectangle-queries) | Medium | Array |
 | 1480 | [Running Sum of 1d Array](/problems/running-sum-of-1d-array) | Easy | Array |
 | 1481 | [Least Number of Unique Integers after K Removals](/problems/least-number-of-unique-integers-after-k-removals) | Medium | Array, Sort |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | Array, Sort. |
+| 1492 | [The kth Factor of n](/problems/the-kth-factor-of-n) | Medium | Math |
+| 1493 | [Longest Subarray of 1's After Deleting One Element](/problems/longest-subarray-of-1s-after-deleting-one-element) | Medium | Array |
 
 ## Questions / Issues
 
