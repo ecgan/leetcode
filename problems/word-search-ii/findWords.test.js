@@ -13,3 +13,15 @@ test('Example 1', () => {
 
   expect(result).toStrictEqual(['oath', 'eat'])
 })
+
+test('board contains every character from every words', () => {
+  const board = [
+    ['a', 'b'],
+    ['d', 'c']
+  ]
+  const words = ['abcd', 'dcba']
+
+  const result = findWords(board, words)
+
+  expect(result).toStrictEqual(['abcd', 'dcba'])
+})
