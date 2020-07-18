@@ -53,13 +53,20 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 49 | [Group Anagrams](/problems/group-anagrams) | Medium | Hash Table, String |
 | 53 | [Maximum Subarray](/problems/maximum-subarray) | Easy | Array, Divide and Conquer, Dynamic Programming |
 | 55 | [Jump Game](/problems/jump-game) | Medium | Array, Greedy |
+| 60 | [Permutation Sequence](/problems/permutation-sequence) | Medium | Math, Backtracking |
+| 62 | [Unique Paths](/problems/unique-paths) | Medium | Array, Dynamic Programming |
 | 64 | [Minimum Path Sum](/problems/minimum-path-sum) | Medium | Array, Dynamic Programming |
 | 70 | [Climbing Stairs](/problems/climbing-stairs) | Easy | Dynamic Programming |
 | 72 | [Edit Distance](/problems/edit-distance) | Hard | String, Dynamic Programming |
+| 75 | [Sort Colors](/problems/sort-colors) | Medium | Array, Two Pointers, Sort |
+| 96 | [Unique Binary Search Trees](/problems/unique-binary-search-trees) | Medium | Dynamic Programming, Tree |
 | 121 | [Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock) | Easy | Array, Dynamic Programming |
 | 122 | [Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii) | Easy | Array, Greedy |
 | 124 | [Binary Tree Maximum Path Sum](/problems/binary-tree-maximum-path-sum) | Hard | Tree, Depth-first Search |
+| 129 | [Sum Root to Leaf Numbers](/problems/sum-root-to-leaf-numbers) | Medium | Tree, Depth-first Search |
+| 130 | [Surrounded Regions](/problems/surrounded-regions) | Medium | Depth-first Search, Breadth-first Search, Union Find |
 | 136 | [Single Number](/problems/single-number) | Easy | Hash table, bit manipulation |
+| 137 | [Single Number II](/problems/single-number-ii) | Medium | Bit Manipulation |
 | 146 | [LRU Cache](/problems/lru-cache) | Medium | Design |
 | 155 | [Min Stack](/problems/min-stack) | Easy | Stack, Design |
 | 169 | [Majority Element](/problems/majority-element) | Easy | Array, Divide and Conquer, Bit Manipulation |
@@ -70,33 +77,52 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 202 | [Happy Number](/problems/happy-number) | Easy | Hash Table, Math |
 | 207 | [Course Schedule](/problems/course-schedule) | Medium | Depth-first Search, Breadth-first Search, Graph, Topological Sort |
 | 208 | [Implement Trie (Prefix Tree)](/problems/implement-trie-prefix-tree) | Medium | Design, Trie |
+| 212 | [Word Search II](/problems/word-search-ii) | Hard | Backtracking, Trie |
 | 221 | [Maximal Square](/problems/maximal-square) | Medium | Dynamic Programming |
+| 222 | [Count Complete Tree Nodes](/problems/count-complete-tree-nodes) | Medium | Binary Search, Tree |
+| 226 | [Invert Binary Tree](/problems/invert-binary-tree) | Easy | Tree |
 | 230 | [Kth Smallest Element in a BST](/problems/kth-smallest-element-in-a-bst) | Medium | Binary Search, Tree |
+| 231 | [Power of Two](/problems/power-of-two) | Easy | Math, Bit Manipulation |
+| 237 | [Delete Node in a Linked List](/problems/delete-node-in-a-linked-list) | Easy | Linked List |
 | 238 | [Product of Array Except Self](/problems/product-of-array-except-self) | Medium | Array |
+| 275 | [H-Index II](/problems/h-index-ii) | Medium | Binary Search |
 | 278 | [First Bad Version](/problems/first-bad-version) | Easy | Binary Search |
+| 279 | [Perfect Squares](/problems/perfect-squares) | Medium | Math, Dynamic Programming, Breadth-first Search |
 | 283 | [Move Zeroes](/problems/move-zeroes) | Easy | Array, Two Pointers |
+| 287 | [Find the Duplicate Number](/problems/find-the-duplicate-number) | Medium | Array, Two Pointers, Binary Search |
 | 303 | [Range Sum Query - Immutable](/problems/range-sum-query-immutable) | Easy | Dynamic Programming |
 | 328 | [Odd Even Linked List](/problems/odd-even-linked-list) | Medium | Linked List |
+| 332 | [Reconstruct Itinerary](/problems/reconstruct-itinerary) | Medium | Depth-first Search, Graph |
 | 338 | [Counting Bits](/problems/counting-bits) | Medium | Dynamic Programming, Bit Manipulation |
+| 344 | [Reverse String](/problems/reverse-string) | Easy | Two Pointers, String |
 | 349 | [Intersection of Two Arrays](/problems/intersection-of-two-arrays) | Easy | Hash table, two pointers, binary search, sort, set |
 | 350 | [Intersection of Two Arrays II](/problems/intersection-of-two-arrays-ii) | Easy | Hash Table, two pointers, binary search, sort |
 | 367 | [Valid Perfect Square](/problems/valid-perfect-square) | Easy | Math, Binary Search |
+| 368 | [Largest Divisible Subset](/problems/largest-divisible-subset) | Medium | Math, Dynamic Programming |
+| 380 | [Insert Delete GetRandom O(1)](/problems/insert-delete-getrandom-o1) | Medium | Array, Hash Table, Design |
 | 383 | [Ransom Note](/problems/ransom-note) | Easy | String |
 | 387 | [First Unique Character in a String](/problems/first-unique-character-in-a-string) | Easy | Hash Table, String |
 | 392 | [Is Subsequence](/problems/is-subsequence) | Easy | Binary Search, Dynamic Programming, Greedy |
 | 402 | [Remove K Digits](/problems/remove-k-digits) | Medium | Stack, Greedy |
+| 406 | [Queue Reconstruction by Height](/problems/queue-reconstruction-by-height) | Medium | Greedy |
 | 438 | [Find All Anagrams in a String](/problems/find-all-anagrams-in-a-string) | Medium | Hash Table |
 | 451 | [Sort Characters By Frequency](/problems/sort-characters-by-frequency) | Medium | Hash Table, Heap |
+| 468 | [Validate IP Address](/problems/validate-ip-address) | Medium | String |
 | 476 | [Number Complement](/problems/number-complement) | Easy | Bit Manipulation |
+| 518 | [Coin Change 2](/problems/coin-change-2) | Medium | - |
 | 525 | [Contiguous Array](/problems/contiguous-array) | Medium | Hash Table |
+| 528 | [Random Pick with Weight](/problems/random-pick-with-weight) | Medium | Binary Search, Random |
 | 540 | [Single Element in a Sorted Array](/problems/single-element-in-a-sorted-array) | Medium | - |
 | 543 | [Diameter of Binary Tree](/problems/diameter-of-binary-tree) | Easy | Tree |
 | 560 | [Subarray Sum Equals K](/problems/subarray-sum-equals-k) | Medium | Array, Hash Table |
 | 567 | [Permutation in String](/problems/permutation-in-string) | Medium | Two Pointers, Sliding Window |
 | 678 | [Valid Parenthesis String](/problems/valid-parenthesis-string) | Medium | String |
+| 700 | [Search in a Binary Search Tree](/problems/search-in-a-binary-search-tree) | Easy | Tree |
+| 714 | [Dungeon Game](/problems/dungeon-game) | Hard | Binary Search, Dynamic Programming |
 | 733 | [Flood Fill](/problems/flood-fill) | Easy | Depth-first Search |
 | 746 | [Min Cost Climbing Stairs](/problems/min-cost-climbing-stairs) | Easy | Array, Dynamic Programming |
 | 771 | [Jewels and Stones](/problems/jewels-and-stones) | Easy | Hash Table |
+| 787 | [Cheapest Flights Within K Stops](/problems/cheapest-flights-within-k-stops) | Medium | Dynamic Programming, Heap, Breadth-first Search |
 | 844 | [Backspace String Compare](/problems/backspace-string-compare) | Easy | Two Pointers, Stack |
 | 876 | [Middle of the Linked List](/problems/middle-of-the-linked-list) | Easy | Linked List |
 | 886 | [Possible Bipartition](/problems/possible-bipartition) | Medium | Depth-first Search |
@@ -108,7 +134,9 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 997 | [Find the Town Judge](/problems/find-the-town-judge) | Easy | Graph |
 | 1008 | [Construct Binary Search Tree from Preorder Traversal](/problems/construct-binary-search-tree-from-preorder-traversal) | Medium | Tree |
 | 1025 | [Divisor Game](/problems/divisor-game) | Easy | Math, Dynamic Programming |
+| 1029 | [Two City Scheduling](/problems/two-city-scheduling) | Easy | Greedy |
 | 1035 | [Uncrossed Lines](/problems/uncrossed-lines) | Medium | Array |
+| 1044 | [Longest Duplicate Substring](/problems/longest-duplicate-substring) | Hard | Hash Table, Binary Search |
 | 1046 | [Last Stone Weight](/problems/last-stone-weight) | Easy | Heap, Greedy |
 | 1143 | [Longest Common Subsequence](/problems/longest-common-subsequence) | Medium | Dynamic Programming |
 | 1144 | [Decrease Elements To Make Array Zigzag](/problems/decrease-elements-to-make-array-zigzag) | Medium | Array |
@@ -180,7 +208,7 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1476 | [Subrectangle Queries](/problems/subrectangle-queries) | Medium | Array |
 | 1480 | [Running Sum of 1d Array](/problems/running-sum-of-1d-array) | Easy | Array |
 | 1481 | [Least Number of Unique Integers after K Removals](/problems/least-number-of-unique-integers-after-k-removals) | Medium | Array, Sort |
-| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | Array, Sort. |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | Array, Sort |
 | 1492 | [The kth Factor of n](/problems/the-kth-factor-of-n) | Medium | Math |
 | 1493 | [Longest Subarray of 1's After Deleting One Element](/problems/longest-subarray-of-1s-after-deleting-one-element) | Medium | Array |
 
