@@ -16,3 +16,11 @@ test('Example 2', () => {
 
   expect(result).toBe(1026)
 })
+
+test('tree with null sibling node', () => {
+  const root = deserialize([1, 2, 3, null, 4, 5])
+
+  const result = sumNumbers(root)
+
+  expect(result).toBe(259)
+})
