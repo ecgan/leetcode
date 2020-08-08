@@ -1,4 +1,4 @@
-const dayOfYear = require('./solution')
+const dayOfYear = require('./dayOfYear')
 
 test('Example 1', () => {
   const date = '2019-01-09'
