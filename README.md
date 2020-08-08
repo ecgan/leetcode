@@ -143,7 +143,7 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1145 | [Binary Tree Coloring Game](/problems/binary-tree-coloring-game/) | Medium | Tree, depth-first search |
 | 1150 | [Check If a Number Is Majority Element in a Sorted Array](/problems/is-a-a-majority-element) | Easy | Array, binary search |
 | 1153 | [String Transforms Into Another String](/problems/string-transforms-into-another-string) | Hard | Graph |
-| 1154 | [Day of the Year](/problems/ordinal-number-of-date) | Easy | Math |
+| 1154 | [Day of the Year](problems/day-of-the-year) | Easy | Math |
 | 1160 | [Find Words That Can Be Formed by Characters](/problems/find-words-that-can-be-formed-by-characters) | Easy | Array, hash table |
 | 1161 | [Maximum Level Sum of a Binary Tree](/problems/maximum-level-sum-of-a-binary-tree) | Medium | Graph |
 | 1162 | [As Far from Land as Possible](/problems/as-far-from-land-as-possible) | Medium | Breadth-first search, graph |
