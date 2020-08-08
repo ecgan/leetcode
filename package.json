@@ -1,6 +1,6 @@
 {
   "name": "leetcode",
-  "version": "1.28.0",
+  "version": "1.28.1",
   "description": "My solutions for LeetCode problems.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ecgan/leetcode",
   "devDependencies": {
-    "codecov": "^3.6.5",
+    "codecov": "^3.7.2",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
