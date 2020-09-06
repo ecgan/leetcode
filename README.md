@@ -211,6 +211,11 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1491 | [Average Salary Excluding the Minimum and Maximum Salary](/problems/average-salary-excluding-the-minimum-and-maximum-salary) | Easy | Array, Sort |
 | 1492 | [The kth Factor of n](/problems/the-kth-factor-of-n) | Medium | Math |
 | 1493 | [Longest Subarray of 1's After Deleting One Element](/problems/longest-subarray-of-1s-after-deleting-one-element) | Medium | Array |
+| 1572 | [Matrix Diagonal Sum](/problems/matrix-diagonal-sum) | Easy | Array |
+| 1574 | [Shortest Subarray to be Removed to Make Array Sorted](/problems/shortest-subarray-to-be-removed-to-make-array-sorted) | Medium | Array, Binary Search |
+| 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](/problems/replace-all-s-to-avoid-consecutive-repeating-characters) | Easy | String |
+| 1577 | [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers) | Medium | Hash Table, Math |
+| 1578 | [Minimum Deletion Cost to Avoid Repeating Letters](/problems/minimum-deletion-cost-to-avoid-repeating-letters) | Medium | Greedy |
 
 ## Questions / Issues
 
