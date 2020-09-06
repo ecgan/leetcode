@@ -50,3 +50,7 @@ Constraints:
 
 - `1 <= arr.length <= 10^5`
 - `0 <= arr[i] <= 10^9`
+
+## Solution Explanation
+
+Reference: [C++ O(N) Sliding window; Explanation with Illustrations](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/discuss/830480/C%2B%2B-O(N)-Sliding-window-Explanation-with-Illustrations) by [lzl124631x](https://leetcode.com/lzl124631x)

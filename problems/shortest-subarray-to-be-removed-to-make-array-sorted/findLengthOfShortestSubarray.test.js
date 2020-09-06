@@ -63,3 +63,11 @@ test('remove head', () => {
 
   expect(result).toBe(8)
 })
+
+test('[1, 2, 3, 10, 0, 7, 8, 9] should return 2 (remove 10 and 0)', () => {
+  const arr = [1, 2, 3, 10, 0, 7, 8, 9]
+
+  const result = findLengthOfShortestSubarray(arr)
+
+  expect(result).toBe(2)
+})
