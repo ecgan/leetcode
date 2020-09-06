@@ -6,7 +6,7 @@ Difficulty: Medium
 
 Topics: Greedy.
 
-## Explanation
+## Problem
 
 Given a string `s` and an array of integers `cost` where `cost[i]` is the cost of deleting the character `i` in `s`.
 
