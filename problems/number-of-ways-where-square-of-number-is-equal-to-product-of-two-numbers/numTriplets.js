@@ -15,7 +15,7 @@ const getNum = (sorted1, sorted2) => {
       const bIndex = sortedIndexOf(sorted2, b)
       const bLastIndex = sortedLastIndexOf(sorted2, b)
 
-      if (bLastIndex >= aIndex) {
+      if (aIndex <= bLastIndex) {
         const count = (bLastIndex - Math.max(aIndex + 1, bIndex) + 1)
         result += count
       }
