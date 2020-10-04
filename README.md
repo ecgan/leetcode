@@ -216,6 +216,10 @@ The listing below is sorted based on LeetCode #. If you are interested to see my
 | 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](/problems/replace-all-s-to-avoid-consecutive-repeating-characters) | Easy | String |
 | 1577 | [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers) | Medium | Hash Table, Math |
 | 1578 | [Minimum Deletion Cost to Avoid Repeating Letters](/problems/minimum-deletion-cost-to-avoid-repeating-letters) | Medium | Greedy |
+| 1603 | [Design Parking System](/problems/design-parking-system) | Easy | Design |
+| 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period) | Medium | String, Ordered Map |
+| 1608 | [Special Array With X Elements Greater Than or Equal X](/problems/special-array-with-x-elements-greater-than-or-equal-x) | Easy | Array |
+| 1609 | [Even Odd Tree](/problems/even-odd-tree) | Medium | Tree |
 
 ## Questions / Issues
 
